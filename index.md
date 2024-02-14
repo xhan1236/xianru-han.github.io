@@ -1,8 +1,8 @@
 ---
-title: "A Burning Issue: Wildfire Smoke Exposure, Retail Sales, and Demand for Adaptation in Healthcare"
+title: "The Distributional Effects of Tighter Regulations: New Evidence from the Sugarcane Burning in Florida"
 authors:
-- Xianru Han, Wenying Li, Haoluan Wang
-date: "2023-08-07T00:00:00Z"
+- admin
+date: "2023-02-07T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -18,19 +18,17 @@ publication_types: ["3"]
 publication: ""
 publication_short: ""
 
-abstract: Wildfire events have increased in frequency and severity across the United States in recent decades. While a growing literature has documented the effects of wildfire smoke exposure on a wide range of health and socioeconomic outcomes, little is known about its impact on consumer behavior and household demand for adaptation in healthcare. We combine a newly developed and digitized dataset on daily wildfire smoke PM2.5 concentrations across the contiguous United States during 2006-2019 with weekly Nielsen retail scanner data to quantify how wildfire smoke exposure affects retail sales of air purifiers, bottled water, cold remedies, nasal products, cough products, and nutritional products. We find a positive and statistically significant impact of wildfire smoke exposure on the retail sales of these products. Dynamic effects are evident as wildfire smoke exposure in previous weeks also increases current sales. Nonlinear effects arising from the varying intensity of wildfire smoke exposure also reveal distinct patterns of demand for adaptation. We further explore how the effects of wildfire smoke exposure vary with socio-demographic characteristics, focusing on social vulnerability and highlighting the implications of environmental justice. Our results underscore the need for proactive policies to address the increased demand for medical and healthcare products as household adaptive measures during the wildfire season, particularly targeting socioeconomically vulnerable populations who may be prone to limited access to other preventive measures against wildfire.
+abstract: The environmental regulations can affect the distribution of pollution and thus alter the burden of pollution costs. In South Florida, a wind-based sugarcane burning regulation was put in place to restrict burning when winds were likely to direct pollution towards higher-income and more densely populated areas. In 2019, additional burn restrictions were introduced to mitigate burning on days with poor air quality. Leveraging data from satellite-based active fire products and Aerosol Optical Depth (AOD) levels, this study empirically assesses the air quality and distributional impacts of the 2019 burning restrictions, using difference-in-differences and triple difference estimations. The analysis reveals that, on restricted days, the number of fires in the primary sugarcane growing region decreases by 41 percent relative to the protected zone. And the results may provide suggestive evidence that farmers strategically shift burnings to non-restricted days. Consequently, on non-restricted days, communities in the sugarcane-burning areas experience deteriorated air quality. These findings shed light on an unexplored implication of stringent regulations alongside the wind-based discriminatory regulation - distributional consequences. 	
 
 
 
-
-links:'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4617835'
-
+links:
 url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
-url_project: ''
-url_slides: ''
+url_project: 
+url_slides:  files/working-paper1-slides.pdf
 url_source: ''
 url_video: ''
 
@@ -56,5 +54,6 @@ projects:
 #   Otherwise, set `slides: ""`.
 slides: ''
 ---
+
 
 
