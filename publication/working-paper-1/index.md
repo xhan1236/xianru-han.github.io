@@ -2,7 +2,7 @@
 title: "The Distributional Effects of Tighter Regulations: New Evidence from the Sugarcane Burning in Florida"
 authors:
 - admin
-date: "2023-02-07T00:00:00Z"
+date: "2024-02-07T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
