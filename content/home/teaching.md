@@ -15,7 +15,7 @@ weight = 120
 
 +++
 
-### AREC 610: Microeconomic Applications in Agricultural and Resource Markets (Graduate)
+### AREC 610: Microeconomic Applications in Agricultural and Resource Markets (Ph.D.)
 University of Maryland, Spring 2022, Spring 2024
 
 ### AREC 260: The Science of Gender in Economics and Development (Undergraduate)
