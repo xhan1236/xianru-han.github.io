@@ -23,7 +23,7 @@ abstract: Wildfire events have increased in frequency and severity across the Un
 
 
 
-links: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4617835
+
 
 url_pdf: ''
 url_code: ''
