@@ -1,5 +1,5 @@
 ---
-title: "A burning issue: Wildfire smoke exposure, retail sales, and demand for adaptation in healthcare"
+title: "A Burning Issue: Wildfire Smoke Exposure, Retail Sales, and Demand for Adaptation in Healthcare"
 authors:
 - Xianru Han, Wenying Li, Haoluan Wang
 date: "2023-08-07T00:00:00Z"
@@ -23,7 +23,7 @@ abstract: Wildfire events have increased in frequency and severity across the Un
 
 
 
-links:
+links: ''
 
 url_pdf: ''
 url_code: ''
