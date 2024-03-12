@@ -51,10 +51,10 @@ social:
 
 
 # Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+# To enable, copy your resume/CV to `static/files/updatecv.pdf` and uncomment the lines below.
 - icon: cv
   icon_pack: ai
-  link: files/cv.pdf
+  link: files/updatecv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -66,4 +66,4 @@ user_groups:
 - Visitors
 ---
 
-I am a Ph.D. candidate in the Department of Agricultural and Resource Economics at the University of Maryland. I am an environmental and energy economist with a major focus on distributional effect of environmental policy and heterogeneous responses to environmental risk. 
+I am a Ph.D. candidate in the Department of Agricultural and Resource Economics at the University of Maryland. I am an environmental and energy economist with a major focus on the distributional effect of environmental policy and heterogeneous responses to environmental risk. 
