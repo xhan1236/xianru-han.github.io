@@ -22,7 +22,7 @@ abstract: Environmental regulations shape the spatial distribution of pollution,
 
 
 links:
-url_pdf: ''
+url_pdf: files/working-paper1-paper.pdf
 url_code: ''
 url_dataset: ''
 url_poster: ''
