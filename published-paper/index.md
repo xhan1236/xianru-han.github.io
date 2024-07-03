@@ -1,16 +1,13 @@
 ---
-title: "An example journal article"
+title: "Navigate through the haze: Wildfire smoke exposure and Metrorail ridership"
 authors:
-- admin
-- Robert Ford
-author_notes:
-- "Equal contribution"
-- "Equal contribution"
-date: "2015-09-01T00:00:00Z"
+- Xianru Han, Haoluan Wang, Jiaao Yu
+
+date: "2024-08-01T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2024-08-01T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -19,10 +16,12 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Journal of Source Themes, 1*(1)"
+publication: "Transportation Research Part D: Transport and Environment, Volume 133, 104309"
 publication_short: ""
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Adverse weather events significantly impact the operations of urban transportation systems and change human travel behaviors. Over the decades, wildfires have emerged as a pressing concern due to their increased frequency and intensity, yet the relationship between wildfire smoke and public transportation usage remains largely unexplored. Leveraging high-resolution daily wildfire-driven PM2.5 concentration estimates and station-level Metrorail ridership data in the Washington Metropolitan Area spanning 2012–2019, we examine the effects of wildfire smoke exposure on Metrorail usage. We find that wildfire smoke exposure results in a 0.8% increase in Metrorail ridership on weekdays and a more pronounced 3.7% rise on weekends. Additionally, we show a stronger response in Metrorail ridership to wildfire smoke during off-peak hours compared to peak hours, with the most substantial increase observed during the winter. Our heterogeneity analysis further suggests that a lack of vehicle ownership and higher reliance on walking and public transportation are key factors leading to increased Metrorail ridership. Collectively, these results highlight the need for proactive service adjustments and effective communication strategies to accommodate the potential shifts in human travel behaviors and Metrorail ridership on days exposed to wildfire smoke.
+
+
 
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -34,7 +33,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_pdf: https://www.sciencedirect.com/science/article/pii/S1361920924002669?dgcid=coauthor
 url_code: ''
 url_dataset: ''
 url_poster: ''
