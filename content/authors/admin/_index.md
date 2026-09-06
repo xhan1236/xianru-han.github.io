@@ -39,8 +39,6 @@ education:
     institution: China Agricultural University
     year: 2018
     
-
-
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
