@@ -10,31 +10,35 @@ authors:
 superuser: true
 
 # Role/position
-role: Ph.D. Candidate in Agricultural and Resource Economics 
+role: Assistant Professor
 
 # Organizations/Affiliations
 organizations:
-- name: University of Maryland
-  url: "https://arec.umd.edu/"
+- name: The Chinese University of Hong Kong, Shenzhen
+  url: "https://www.cuhk.edu.cn/en"
 
 
 interests:
 - Environmental Economics
 - Energy Economics
+- Transportation Economics
+- Applied Microeconometrics
  
-
 education:
   courses:
   - course: Ph.D. in Agricultural and Resource Economics 
     institution: University of Maryland
-    year: 2025 (Expected)
+    year: 2026 
   - course: M.A. in Statistics
     institution: Columbia University 
     year: 2020  
   - course: B.S. in Agricultural and Resource Economics, Statistics
     institution: University of Maryland
     year: 2018
-
+ - course: B.A. in Economics
+    institution: China Agricultural University
+    year: 2018
+    
 
 
 # Social/Academic Networking
@@ -66,4 +70,4 @@ user_groups:
 - Visitors
 ---
 
-I am a Ph.D. candidate in the Department of Agricultural and Resource Economics at the University of Maryland. I am an environmental and energy economist with a major focus on the distributional effect of environmental policy and heterogeneous responses to environmental risk. 
+I am an Assistant Professor in the Division of Development and Governance, School of Humanities and Social Science, at The Chinese University of Hong Kong, Shenzhen. I am an environmental and energy economist whose research focuses on how regulatory signals, policy design, and enforcement shape behavior, markets, and distributional outcomes. My work combines causal inference methods with administrative, market, and satellite data to analyze heterogeneous responses to environmental risks and policy interventions.
