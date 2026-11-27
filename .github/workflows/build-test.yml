@@ -13,12 +13,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - hugo: "0.79.1"
-            repo: "gcushen/hugo-academic"
-            tag: "v4.8.0"
-          - hugo: "0.83.1"
-            repo: "wowchemy/wowchemy-hugo-themes"
-            tag: "v4.8.0"
           - hugo: "0.89.4"
             repo: "wowchemy/wowchemy-hugo-themes"
             tag: "v5.0.0"
@@ -54,23 +48,36 @@ jobs:
 
       - name: Build
         continue-on-error: true
-        run: hugo -d /tmp/out --minify 2>&1 | tail -25
+        run: hugo -d /tmp/out 2>&1 | tail -25
 
-      - name: Result
+      - name: Compare built homepage against the published one
         if: always()
         run: |
-          N=$(find /tmp/out -type f 2>/dev/null | wc -l)
-          echo "RESULT files_produced=$N"
-          if [ "$N" -gt 0 ]; then
-            echo "RESULT sections=$(grep -o 'section id="[a-z-]*"' /tmp/out/index.html | sed 's/section id=//' | tr -d '\"' | tr '\n' ',')"
-            echo "RESULT widget_classes=$(grep -o 'wg-[a-z-]*' /tmp/out/index.html | sort -u | tr '\n' ',')"
-            echo "RESULT navlinks=$(grep -o 'href="/#[a-z-]*"' /tmp/out/index.html | sort -u | tr '\n' ',')"
-            echo "RESULT opportunities=$(grep -c -i 'Opportunities' /tmp/out/index.html || echo 0)"
-            echo "RESULT teaching=$(grep -c -i 'URM 2010\|Teaching' /tmp/out/index.html || echo 0)"
-          fi
-
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: out-hugo${{ matrix.hugo }}-${{ matrix.tag }}
-          path: /tmp/out/index.html
+          python3 - <<'EOF'
+          import re, html
+          def grab(path):
+              t = open(path, encoding='utf-8', errors='replace').read()
+              nav = re.search(r'id="navbar-content".*?</ul>', t, re.S)
+              labels = []
+              if nav:
+                  labels = [html.unescape(x).strip() for x in
+                            re.findall(r'<span>\s*(.*?)\s*</span>', nav.group(0), re.S)]
+                  labels = [l for l in labels if l and '<' not in l]
+              ids = re.findall(r'<section id="?([a-z0-9-]+)"?', t)
+              h3 = [html.unescape(x).strip()[:70] for x in
+                    re.findall(r'<h3[^>]*>\s*(.*?)\s*</h3>', t, re.S)]
+              h3 = [x for x in h3 if '<' not in x]
+              return labels, ids, h3
+          a = grab('index.html')      # currently published
+          b = grab('/tmp/out/index.html')  # freshly built
+          for name, (labels, ids, h3) in (("PUBLISHED", a), ("BUILT", b)):
+              print(f"--- {name} nav:", " | ".join(labels))
+              print(f"--- {name} sections:", ", ".join(ids))
+              print(f"--- {name} h3 count:", len(h3))
+              for x in h3[:14]:
+                  print(f"      {name}: {x}")
+          print("=== only PUBLISHED has these headings ===")
+          for x in set(a[2]) - set(b[2]): print("   LOST:", x)
+          print("=== only BUILT has these headings ===")
+          for x in set(b[2]) - set(a[2]): print("   NEW :", x)
+          EOF
