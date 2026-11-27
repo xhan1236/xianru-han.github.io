@@ -1,0 +1,6 @@
+# Hugo build artifacts
+.hugo_build.lock
+public/
+resources/_gen/
+# Theme is fetched by the publish workflow, not committed
+themes/
