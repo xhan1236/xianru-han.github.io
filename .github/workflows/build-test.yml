@@ -1,0 +1,60 @@
+# Build-only test workflow. Does NOT deploy or commit anything.
+# Purpose: verify which Hugo + Academic theme versions can build this site.
+name: Build test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ci-build-test]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - hugo: "0.79.1"
+            theme: "v4.8.0"
+          - hugo: "0.74.3"
+            theme: "v4.7.0"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch Academic theme ${{ matrix.theme }}
+        run: |
+          git clone --depth 1 --branch ${{ matrix.theme }} \
+            https://github.com/wowchemy/wowchemy-hugo-themes.git /tmp/theme || \
+          git clone --depth 1 --branch ${{ matrix.theme }} \
+            https://github.com/gcushen/hugo-academic.git /tmp/theme
+          mkdir -p themes/hugo-academic
+          if [ -d /tmp/theme/wowchemy ]; then
+            cp -r /tmp/theme/wowchemy/. themes/hugo-academic/
+          else
+            cp -r /tmp/theme/. themes/hugo-academic/
+          fi
+          ls themes/hugo-academic | head -20
+
+      - name: Install Hugo ${{ matrix.hugo }} extended
+        run: |
+          curl -sSL -o /tmp/hugo.deb \
+            https://github.com/gohugoio/hugo/releases/download/v${{ matrix.hugo }}/hugo_extended_${{ matrix.hugo }}_Linux-64bit.deb
+          sudo dpkg -i /tmp/hugo.deb
+          hugo version
+
+      - name: Build
+        run: hugo -d /tmp/out --minify
+
+      - name: Report
+        if: always()
+        run: |
+          echo "--- output file count ---"
+          find /tmp/out -type f 2>/dev/null | wc -l
+          echo "--- does the new section render? ---"
+          grep -c -i "Opportunities" /tmp/out/index.html 2>/dev/null || echo "NOT FOUND"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: site-hugo${{ matrix.hugo }}-theme${{ matrix.theme }}
+          path: /tmp/out
