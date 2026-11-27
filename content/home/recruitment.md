@@ -35,8 +35,12 @@ I hire research assistants on a rolling basis, and start dates are flexible — 
 
 Typical work includes cleaning and linking large datasets, geospatial processing, and writing reproducible code. Some experience with R, Stata, Python, or GIS helps, but a relevant background and real interest in the research count for more — the specific tools can be picked up along the way.
 
-### How to get in touch
+### How to apply
 
-Email me at <hanxianru@cuhk.edu.cn> with your CV and a short note on why my research interests you — that is enough to start a conversation. Anything else you would like to share, such as a transcript, writing sample, or code sample, is welcome but not required.
+Email me at <hanxianru@cuhk.edu.cn> with a short note on why my research interests you, and please attach all of the following:
 
-I read everything that arrives, though replies may take a week or two during the semester.
+- your CV,
+- your transcript,
+- a working paper or a sample of your code.
+
+Either option works for the last item — a paper if you have one, code if you do not. I read everything that arrives, though replies may take a week or two during the semester.
