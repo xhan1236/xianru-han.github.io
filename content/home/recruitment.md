@@ -5,7 +5,7 @@ active = true
 date = 2026-11-27
 
 # Note: a full width section format can be enabled by commenting out the `title` and `subtitle` with a `#`.
-title = "Opportunities"
+title = "Join us"
 # subtitle = ""
 
 # Order that this section will appear in.

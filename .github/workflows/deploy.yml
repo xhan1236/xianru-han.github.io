@@ -59,7 +59,7 @@ jobs:
       - name: Sanity check before publishing
         run: |
           fail=0
-          for needle in "Xianru Han" "Opportunities" "URM 2010" "Metrorail" \
+          for needle in "Xianru Han" "Join us" "URM 2010" "Metrorail" \
                         "hanxianru@cuhk.edu.cn" "Working Papers"; do
             if grep -q "$needle" /tmp/out/index.html; then
               echo "ok      $needle"
