@@ -2,29 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3 | Xianru Han</title>
-    <link>/publication-type/3/</link>
-      <atom:link href="/publication-type/3/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://xianru-han.com/publication-type/3/</link>
+      <atom:link href="https://xianru-han.com/publication-type/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 07 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://xianru-han.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
       <title>3</title>
-      <link>/publication-type/3/</link>
+      <link>https://xianru-han.com/publication-type/3/</link>
     </image>
     
     <item>
-      <title>A burning issue: Wildfire smoke exposure, retail sales, and demand for adaptation in healthcare</title>
-      <link>/publication/job-market_paper/</link>
-      <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>/publication/job-market_paper/</guid>
+      <title>Potential vs. Actual Environmental Regulation: Evidence from Germany’s Car Market</title>
+      <link>https://xianru-han.com/publication/job-market-paper-2025/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://xianru-han.com/publication/job-market-paper-2025/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Distributional Effects of Tighter Regulations: New Evidence from the Sugarcane Burning in Florida</title>
-      <link>/publication/working-paper-1/</link>
-      <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>/publication/working-paper-1/</guid>
+      <link>https://xianru-han.com/publication/working-paper-1/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://xianru-han.com/publication/working-paper-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Burning Issue: Wildfire Smoke Exposure, Retail Sales, and Demand for Adaptation in Healthcare</title>
+      <link>https://xianru-han.com/publication/job-market_paper/</link>
+      <pubDate>Mon, 07 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://xianru-han.com/publication/job-market_paper/</guid>
       <description></description>
     </item>
     
