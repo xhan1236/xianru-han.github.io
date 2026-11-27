@@ -1,5 +1,4 @@
-# Build-only test workflow. Does NOT deploy or commit anything.
-# Purpose: verify which Hugo + Academic theme versions can build this site.
+# Diagnostic build matrix. Does NOT deploy or commit anything.
 name: Build test
 
 on:
@@ -15,25 +14,36 @@ jobs:
       matrix:
         include:
           - hugo: "0.79.1"
-            theme: "v4.8.0"
-          - hugo: "0.74.3"
-            theme: "v4.7.0"
+            repo: "gcushen/hugo-academic"
+            tag: "v4.8.0"
+          - hugo: "0.83.1"
+            repo: "wowchemy/wowchemy-hugo-themes"
+            tag: "v4.8.0"
+          - hugo: "0.89.4"
+            repo: "wowchemy/wowchemy-hugo-themes"
+            tag: "v5.0.0"
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch Academic theme ${{ matrix.theme }}
+      - name: Fetch theme ${{ matrix.repo }}@${{ matrix.tag }}
+        continue-on-error: true
         run: |
-          git clone --depth 1 --branch ${{ matrix.theme }} \
-            https://github.com/wowchemy/wowchemy-hugo-themes.git /tmp/theme || \
-          git clone --depth 1 --branch ${{ matrix.theme }} \
-            https://github.com/gcushen/hugo-academic.git /tmp/theme
+          git clone --depth 1 --branch ${{ matrix.tag }} \
+            https://github.com/${{ matrix.repo }}.git /tmp/theme
           mkdir -p themes/hugo-academic
           if [ -d /tmp/theme/wowchemy ]; then
             cp -r /tmp/theme/wowchemy/. themes/hugo-academic/
           else
             cp -r /tmp/theme/. themes/hugo-academic/
           fi
-          ls themes/hugo-academic | head -20
+          echo "### theme.toml ###"
+          cat themes/hugo-academic/theme.toml 2>/dev/null | head -12
+
+      - name: Show the template that failed before
+        continue-on-error: true
+        run: |
+          echo "### publication/single.html lines 1-25 ###"
+          sed -n '1,25p' themes/hugo-academic/layouts/publication/single.html || echo "file absent"
 
       - name: Install Hugo ${{ matrix.hugo }} extended
         run: |
@@ -43,18 +53,18 @@ jobs:
           hugo version
 
       - name: Build
-        run: hugo -d /tmp/out --minify
+        continue-on-error: true
+        run: hugo -d /tmp/out --minify 2>&1 | tail -25
 
-      - name: Report
+      - name: Result
         if: always()
         run: |
-          echo "--- output file count ---"
-          find /tmp/out -type f 2>/dev/null | wc -l
-          echo "--- does the new section render? ---"
-          grep -c -i "Opportunities" /tmp/out/index.html 2>/dev/null || echo "NOT FOUND"
-
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: site-hugo${{ matrix.hugo }}-theme${{ matrix.theme }}
-          path: /tmp/out
+          N=$(find /tmp/out -type f 2>/dev/null | wc -l)
+          echo "files produced: $N"
+          if [ "$N" -gt 0 ]; then
+            echo "BUILD PRODUCED OUTPUT"
+            grep -c -i "Opportunities" /tmp/out/index.html 2>/dev/null \
+              && echo "Opportunities section present" || echo "Opportunities NOT in index.html"
+          else
+            echo "BUILD PRODUCED NOTHING"
+          fi
