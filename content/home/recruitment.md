@@ -17,35 +17,26 @@ I am building a research group in environmental, energy, and transportation econ
 
 ### Ph.D. students
 
-I am looking for Ph.D. students to start in **[intake term, e.g. Fall 2027]**. Applications go through the **[Ph.D. program name]** in the School of Humanities and Social Science — admission is decided by the program rather than by me individually, but I am glad to talk with strong candidates before they apply. Admitted students receive **[funding details: stipend, tuition waiver, duration]**.
+I am looking for Ph.D. students to start in **Fall 2027**. Admission is decided by the graduate program rather than by me individually, so applications go through the University's official channels — but I am glad to hear from strong candidates before they apply.
 
 What helps: solid training in microeconomics and econometrics, and real comfort working with data in Stata, R, or Python. Prior research experience is welcome but not expected — curiosity and persistence matter more.
 
 ### Master's students
 
-I supervise and co-supervise master's theses and research projects in **[program name(s)]**. This is a good fit if you want to produce a piece of original empirical work rather than only coursework; past projects have grown into co-authored papers. Current CUHK-Shenzhen master's students are welcome to email me directly with a paragraph on what they would like to work on.
+I am also taking master's students for **Fall 2027**, and I supervise and co-supervise theses and research projects. This is a good fit if you want to produce a piece of original empirical work rather than coursework alone. Current CUHK-Shenzhen master's students are welcome to email me directly with a paragraph on what they would like to work on.
 
 ### Postdoctoral researchers
 
-**[Choose one: I expect to have a funded postdoctoral position starting [date]. / I do not have an open position at the moment, but I am happy to hear from candidates and to support applications to external fellowships.]**
-
-The position is for **[N] years**, with an emphasis on **[research theme]**, and comes with research funding and support for conference travel. Postdocs here are expected to lead their own papers, not only to support mine.
+I anticipate recruiting a postdoctoral researcher to begin in **Fall 2027**, working on empirical environmental and energy economics. The position is meant to leave room for the postdoc's own papers rather than only supporting mine. Length and funding depend on the project, so please write to me if you are interested and we can discuss the details.
 
 ### Research assistants
 
-I hire research assistants year-round, in two forms:
+I hire research assistants on a rolling basis, and start dates are flexible — **RAs can begin at any time of year**. Both full-time and part-time arrangements are possible, including part-time work for current CUHK-Shenzhen undergraduate and master's students during term.
 
-- **Full-time (pre-doctoral) RAs** — for graduates who want research experience before applying to Ph.D. programs. Typically a **[1–2 year]** appointment with substantive involvement in projects, and co-authorship where warranted.
-- **Part-time RAs** — for current CUHK-Shenzhen undergraduate and master's students, usually **[N] hours per week** during term.
-
-Typical work includes cleaning and linking large datasets, geospatial processing, and writing reproducible code. Experience with **[R / Stata / Python / GIS]** is a plus; careful, well-documented work habits matter more than speed.
+Typical work includes cleaning and linking large datasets, geospatial processing, and writing reproducible code. Experience with R, Stata, Python, or GIS is a plus; careful, well-documented work habits matter more than speed.
 
 ### How to get in touch
 
-Email me at **[your email]** with a short note on why my research interests you, along with:
+Email me at <hanxianru@cuhk.edu.cn> with a short note on why my research interests you, along with your CV. Students and RA applicants should include a transcript; Ph.D. and postdoc applicants are welcome to add a writing sample or code sample.
 
-- your CV,
-- your transcript (students and RA applicants),
-- a writing sample or code sample (Ph.D. and postdoc applicants).
-
-I read everything that arrives and reply to serious inquiries, though it may take a week or two during the semester.
+I read everything that arrives, though replies may take a week or two during the semester.
