@@ -60,11 +60,17 @@ jobs:
         if: always()
         run: |
           N=$(find /tmp/out -type f 2>/dev/null | wc -l)
-          echo "files produced: $N"
+          echo "RESULT files_produced=$N"
           if [ "$N" -gt 0 ]; then
-            echo "BUILD PRODUCED OUTPUT"
-            grep -c -i "Opportunities" /tmp/out/index.html 2>/dev/null \
-              && echo "Opportunities section present" || echo "Opportunities NOT in index.html"
-          else
-            echo "BUILD PRODUCED NOTHING"
+            echo "RESULT sections=$(grep -o 'section id="[a-z-]*"' /tmp/out/index.html | sed 's/section id=//' | tr -d '\"' | tr '\n' ',')"
+            echo "RESULT widget_classes=$(grep -o 'wg-[a-z-]*' /tmp/out/index.html | sort -u | tr '\n' ',')"
+            echo "RESULT navlinks=$(grep -o 'href="/#[a-z-]*"' /tmp/out/index.html | sort -u | tr '\n' ',')"
+            echo "RESULT opportunities=$(grep -c -i 'Opportunities' /tmp/out/index.html || echo 0)"
+            echo "RESULT teaching=$(grep -c -i 'URM 2010\|Teaching' /tmp/out/index.html || echo 0)"
           fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: out-hugo${{ matrix.hugo }}-${{ matrix.tag }}
+          path: /tmp/out/index.html
