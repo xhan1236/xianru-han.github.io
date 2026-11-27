@@ -13,13 +13,13 @@ weight = 125
 
 +++
 
-I am building a research group in environmental, energy, and transportation economics at CUHK-Shenzhen, and I am recruiting at every level. The work is empirical and data-intensive: large administrative datasets, satellite and remote-sensing products, and quasi-experimental designs applied to questions about air pollution, energy use, and mobility. If that sounds like your kind of problem, please get in touch.
+I am building a research group in environmental, energy, and transportation economics at CUHK-Shenzhen, and I am recruiting at every level. The work is empirical and data-intensive: large administrative datasets, satellite and remote-sensing products, and quasi-experimental designs applied to questions about air pollution, energy use, and mobility. I do not have a fixed checklist for any of these roles: if your background is relevant and you are genuinely interested in these questions, please get in touch.
 
 ### Ph.D. students
 
 I am looking for Ph.D. students to start in **Fall 2027**. Admission is decided by the graduate program rather than by me individually, so applications go through the University's official channels — but I am glad to hear from strong candidates before they apply.
 
-What helps: solid training in microeconomics and econometrics, and real comfort working with data in Stata, R, or Python. Prior research experience is welcome but not expected — curiosity and persistence matter more.
+Candidates come from a range of backgrounds — economics, statistics, environmental science, engineering — and I care more about whether you find these questions interesting than about any particular set of courses. Prior research experience is welcome but not expected.
 
 ### Master's students
 
@@ -33,10 +33,10 @@ I anticipate recruiting a postdoctoral researcher to begin in **Fall 2027**, wor
 
 I hire research assistants on a rolling basis, and start dates are flexible — **RAs can begin at any time of year**. Both full-time and part-time arrangements are possible, including part-time work for current CUHK-Shenzhen undergraduate and master's students during term.
 
-Typical work includes cleaning and linking large datasets, geospatial processing, and writing reproducible code. Experience with R, Stata, Python, or GIS is a plus; careful, well-documented work habits matter more than speed.
+Typical work includes cleaning and linking large datasets, geospatial processing, and writing reproducible code. Some experience with R, Stata, Python, or GIS helps, but a relevant background and real interest in the research count for more — the specific tools can be picked up along the way.
 
 ### How to get in touch
 
-Email me at <hanxianru@cuhk.edu.cn> with a short note on why my research interests you, along with your CV. Students and RA applicants should include a transcript; Ph.D. and postdoc applicants are welcome to add a writing sample or code sample.
+Email me at <hanxianru@cuhk.edu.cn> with your CV and a short note on why my research interests you — that is enough to start a conversation. Anything else you would like to share, such as a transcript, writing sample, or code sample, is welcome but not required.
 
 I read everything that arrives, though replies may take a week or two during the semester.
