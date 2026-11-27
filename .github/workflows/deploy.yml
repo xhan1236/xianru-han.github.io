@@ -1,0 +1,92 @@
+# Builds the site and commits the generated HTML back to the repository root,
+# which is what GitHub Pages serves.
+#
+# NOTE: the automatic `push` trigger is intentionally commented out. While it is
+# commented, this workflow only runs when started by hand from the Actions tab
+# ("Run workflow"). Uncomment the push block to make every change to main
+# publish automatically.
+name: Build and publish site
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - 'content/**'
+  #     - 'config/**'
+  #     - 'static/**'
+  #     - 'config.toml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+env:
+  HUGO_VERSION: "0.89.4"
+  THEME_REPO: "wowchemy/wowchemy-hugo-themes"
+  THEME_TAG: "v5.0.0"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch theme
+        run: |
+          git clone --depth 1 --branch "$THEME_TAG" \
+            "https://github.com/$THEME_REPO.git" /tmp/theme
+          mkdir -p themes/hugo-academic
+          if [ -d /tmp/theme/wowchemy ]; then
+            cp -r /tmp/theme/wowchemy/. themes/hugo-academic/
+          else
+            cp -r /tmp/theme/. themes/hugo-academic/
+          fi
+
+      - name: Install Hugo
+        run: |
+          curl -sSL -o /tmp/hugo.deb \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb"
+          sudo dpkg -i /tmp/hugo.deb
+          hugo version
+
+      - name: Build
+        run: hugo -d /tmp/out
+
+      - name: Sanity check before publishing
+        run: |
+          fail=0
+          for needle in "Xianru Han" "Opportunities" "URM 2010" "Metrorail" \
+                        "hanxianru@cuhk.edu.cn" "Working Papers"; do
+            if grep -q "$needle" /tmp/out/index.html; then
+              echo "ok      $needle"
+            else
+              echo "MISSING $needle"; fail=1
+            fi
+          done
+          n=$(find /tmp/out -type f | wc -l)
+          echo "files built: $n"
+          [ "$n" -ge 40 ] || { echo "too few files built"; fail=1; }
+          [ "$fail" -eq 0 ] || { echo "refusing to publish an incomplete build"; exit 1; }
+
+      - name: Copy build into the repository root
+        run: |
+          # Remove the theme checkout so it is never committed.
+          rm -rf themes
+          # Copy generated output over the tracked site files.
+          cp -r /tmp/out/. .
+          git status --short | head -40
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "no changes to publish"; exit 0
+          fi
+          git add -A
+          git commit -m "Rebuild site [skip ci]"
+          git push
