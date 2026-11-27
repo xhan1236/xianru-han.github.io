@@ -9,8 +9,8 @@ name: Build and publish site
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches: [main]
+  push:
+    branches: [deploy-dryrun]
   #   paths:
   #     - 'content/**'
   #     - 'config/**'
