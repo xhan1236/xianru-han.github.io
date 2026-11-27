@@ -17,7 +17,7 @@ I am building a research group in environmental, energy, and transportation econ
 
 ### Ph.D. students
 
-I am looking for Ph.D. students to start in **Fall 2027**. Admission is decided by the graduate program rather than by me individually, so applications go through the University's official channels — but I am glad to hear from strong candidates before they apply.
+I am looking for Ph.D. students to start in **Fall 2027**. Applications go through the University's official channels, but I am glad to hear from strong candidates before they apply.
 
 Candidates come from a range of backgrounds — economics, statistics, environmental science, engineering — and I care more about whether you find these questions interesting than about any particular set of courses. Prior research experience is welcome but not expected.
 
