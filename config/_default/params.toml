@@ -37,7 +37,7 @@ local_business_type = ""
 org_name = "The Chinese University of Hong Kong, Shenzhen"
 
 # Description for search engines and social sharing
-description = "Xianru Han is an Assistant Professor in the Division of Development and Governance, School of Humanities and Social Science, at The Chinese University of Hong Kong, Shenzhen. His research focuses on environmental economics, energy economics, transportation economics, and applied microeconometrics."
+description = "Xianru Han is an Assistant Professor in the Division of Development and Governance, School of Humanities and Social Science, The Chinese University of Hong Kong, Shenzhen. His research focuses on environmental economics, energy economics, transportation economics, and applied microeconometrics."
 
 
 ############################
@@ -60,26 +60,10 @@ diagram = false
 privacy_pack = false
 
 # Enable visitors to edit pages?
-edit_page = {
-  repo_url = "https://github.com/xhan1236/xianru-han.github.io",
-  content_dir = "",
-  repo_branch = "main",
-  editable = {
-    docs = true,
-    page = false,
-    post = false
-  }
-}
+edit_page = { repo_url = "https://github.com/xhan1236/xianru-han.github.io", content_dir = "", repo_branch = "main", editable = { docs = true, page = false, post = false } }
 
 # Show related content at the bottom of pages?
-show_related = {
-  docs = true,
-  page = false,
-  post = true,
-  project = true,
-  publication = true,
-  talk = true
-}
+show_related = { docs = true, page = false, post = true, project = true, publication = true, talk = true }
 
 
 ############################
@@ -95,14 +79,7 @@ phone = ""
 
 # Address
 # I recommend not displaying a specific office until you want to publish it.
-address = {
-  street = "",
-  city = "Shenzhen",
-  region = "Guangdong",
-  postcode = "",
-  country = "China",
-  country_code = "CN"
-}
+address = { street = "", city = "Shenzhen", region = "Guangdong", postcode = "", country = "China", country_code = "CN" }
 
 # Geographic coordinates
 # Leave commented out unless you want to show a map.
@@ -120,12 +97,7 @@ address = {
 
 # Contact links
 contact_links = [
-  {
-    icon = "twitter",
-    icon_pack = "fab",
-    name = "XianruH",
-    link = "https://twitter.com/XianruH"
-  }
+  { icon = "twitter", icon_pack = "fab", name = "XianruH", link = "https://twitter.com/XianruH" }
 ]
 
 
@@ -159,13 +131,7 @@ address_format = "en-us"
 ############################
 
 # Main menu
-main_menu = {
-  enable = true,
-  align = "l",
-  show_logo = true,
-  highlight_active_link = true,
-  show_language = false
-}
+main_menu = { enable = true, align = "l", show_logo = true, highlight_active_link = true, show_language = false }
 
 # Show estimated reading time?
 reading_time = false
@@ -178,13 +144,7 @@ docs_section_pager = true
 sharing = true
 
 # Copyright license
-copyright_license = {
-  enable = false,
-  allow_derivatives = false,
-  share_alike = true,
-  allow_commercial = false,
-  notice = "This work is licensed under {license}"
-}
+copyright_license = { enable = false, allow_derivatives = false, share_alike = true, allow_commercial = false, notice = "This work is licensed under {license}" }
 
 # Highlight site author in author lists?
 highlight_superuser = false
@@ -218,30 +178,15 @@ shape = "circle"
 
 [address_formats]
 
-en-us = {
-  order = ['street', 'city', 'region', 'postcode'],
-  delimiters = [', ', ', ', ' ', '']
-}
+en-us = { order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ' ', ''] }
 
-en-gb = {
-  order = ['street', 'city', 'region', 'postcode'],
-  delimiters = [', ', ', ', ', ', '']
-}
+en-gb = { order = ['street', 'city', 'region', 'postcode'], delimiters = [', ', ', ', ', ', ''] }
 
-de = {
-  order = ['street', 'postcode', 'city'],
-  delimiters = ['<br>', ' ', '']
-}
+de = { order = ['street', 'postcode', 'city'], delimiters = ['<br>', ' ', ''] }
 
-fr-fr = {
-  order = ['street', 'postcode', 'city'],
-  delimiters = ['<br>', ' ', '']
-}
+fr-fr = { order = ['street', 'postcode', 'city'], delimiters = ['<br>', ' ', ''] }
 
-zh = {
-  order = ['postcode', 'region', 'city', 'street'],
-  delimiters = [' ', ' ', ' ', '']
-}
+zh = { order = ['postcode', 'region', 'city', 'street'], delimiters = [' ', ' ', ' ', ''] }
 
 
 ############################
@@ -281,14 +226,7 @@ talk_view = 2
 engine = 0
 
 # Which page types are commentable?
-commentable = {
-  page = true,
-  post = true,
-  docs = true,
-  project = true,
-  publication = true,
-  talk = true
-}
+commentable = { page = true, post = true, docs = true, project = true, publication = true, talk = true }
 
 
 [comments.disqus]

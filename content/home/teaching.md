@@ -15,6 +15,9 @@ weight = 120
 
 +++
 
+### URM 2010: Cities, Society and Environment (Undergraduate)
+The Chinese University of Hong Kong, Shenzhen, Fall 2026
+
 ### AREC 610: Microeconomic Applications in Agricultural and Resource Markets (Ph.D.)
 University of Maryland, Spring 2022, Spring 2024
 
