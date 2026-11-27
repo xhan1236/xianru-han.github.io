@@ -63,6 +63,6 @@ user_groups:
 - Visitors
 ---
 
-I am an Assistant Professor in the Division of Development and Governance, School of Humanities and Social Science, at The Chinese University of Hong Kong, Shenzhen.
+I am an Assistant Professor in the Division of Development and Governance, School of Humanities and Social Science, The Chinese University of Hong Kong, Shenzhen.
 
 I am an environmental and energy economist. My research focuses on how environmental regulations, policy design, and environmental risks affect individual behavior, markets, and distributional outcomes. My work combines causal inference methods with administrative, market, and satellite data to analyze heterogeneous responses to environmental risks and policy interventions.
