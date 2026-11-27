@@ -8,10 +8,10 @@
   url = "files/cv.pdf"
   weight = 10
 
-# [[main]]
-# name = "Publications"
-# url = "#publications"
-#  weight = 20
+[[main]]
+    name = "Publications"
+    url = "#publications"
+    weight = 20
 
 [[main]]
     name = "Working papers"
@@ -22,6 +22,11 @@
     name = "Teaching"
     url = "#teaching"
     weight = 40
+
+[[main]]
+    name = "Opportunities"
+    url = "#recruitment"
+    weight = 45
 
 [[main]]
   name = "Contact"
